@@ -9,7 +9,7 @@ class ConfigParser
   attr_accessor :file, :parser
 
   EXTENSIONS = {
-    linux: ['.cnf' , '.conf' , '.cfg' , '.cf', '.md']
+    linux: ['.cnf' , '.conf' , '.cfg' , '.cf']
   }
 
   def initialize(path=nil)
