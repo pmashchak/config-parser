@@ -53,9 +53,9 @@ configuration.server_threshold => 2.5  # double
 ```
 More examples can be found in './spec/files' folder
 
-Tests (Rspec)
+How to run Tests (Rspec)
 =============
-To run rspecs go to root folder
-run ```bundle install```
-run ```bundle exec rspec spec/
-```
+* cd to the root forlder
+* run `bundle install`
+* run `bundle exec rspec spec/
+`
