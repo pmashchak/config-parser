@@ -14,10 +14,10 @@ class ConfigParser
 
   def initialize(path=nil)
     unless File.exists?(path)
-      raise ArgumentError, "file from path #{path} does not exist"
+      raise ArgumentError, "file #{path} does not exist"
     end
 
-    self.file   = File.open(path, 'r')
+    self.file = File.open(path, 'r')
   end
 
   def configure

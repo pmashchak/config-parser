@@ -13,7 +13,7 @@ class BaseParser
       if self.options.has_key?(method_name)
         self.options[method_name]
       else
-        raise NoMethodError, "config  #{method_name} not found"
+        raise NoMethodError, "config #{method_name} not found"
       end
     end
 
