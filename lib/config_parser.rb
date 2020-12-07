@@ -18,11 +18,10 @@ class ConfigParser
     end
 
     self.file   = File.open(path, 'r')
-    self.parser = ParserDecorator.new(get_parser)
   end
 
-  def parse
-    parser.parse
+  def configure
+    self.parser = get_parser
   end
 
   private
@@ -30,7 +29,7 @@ class ConfigParser
   def get_parser
     case extension
       when *EXTENSIONS[:linux]
-        LinuxParser.new(self.file)
+        ::LinuxParser.new(self.file)
       else
         raise ArgumentError, "extension #{extension} is not supported"
     end
